@@ -16,13 +16,18 @@ if($_SESSION['username'] == 'username') {
  echo $row["city"] . " ";
  echo $row["state"] . " ";
  echo $row["country"] . " ";
- echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
+
+
+echo  "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  print("<br>");
  }
  } else {
  echo "0 results";
  }
+
 print("<br><br>");
+
+ print("<br><br>");
  print("Insert new");
  print("<form action=\"save.php\" method=\"post\">");
 print("<br>");
